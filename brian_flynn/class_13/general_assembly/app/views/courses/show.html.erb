@@ -1,0 +1,5 @@
+<h2><%= @course.name %></h2>
+<p>Instructor: <%= @instructor.name %></p>
+<p>Students: <%= link_to @students.count, course_students_path(@course) %>
+
+

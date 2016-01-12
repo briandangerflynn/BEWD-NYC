@@ -1,0 +1,8 @@
+<h2><%= @course.name %></h2>
+
+<% @students.each do |s| %>
+  <p><b><%= link_to s.name.capitalize, [@course, s] %></b></p>
+  <p>Grade: <%= s.grade %></p>
+  <br>
+
+<% end %>

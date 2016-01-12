@@ -1,0 +1,16 @@
+<h2><%= @student.name.capitalize %></h2>
+<p>Grade: <%= @student.grade %></p>
+
+<p id="delete_student"><%= link_to "Remove Student From Course?", [@course, @student], method: :delete, data: {confirm: "Are you sure?"} %></p>
+
+
+
+
+
+
+
+
+
+
+
+
